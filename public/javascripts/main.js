@@ -52,7 +52,7 @@ inpAmount.addEventListener('change', (ev) => {
 
 const addProduct = async (formData) => {
     console.log('done js');
-    const result = await axios.post('/add', formData)
+    const result = await axios.post('/main/add', formData)
 }
 
 /// ajax

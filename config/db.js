@@ -1,4 +1,4 @@
 module.exports = {
-    uri: 'mongodb://localhost:27017/magazine',
+    uri: 'mongodb+srv://vitaliy19980422:mongodb@cluster0.uftxgn1.mongodb.net/mongo',
     options: {},
   };

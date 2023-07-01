@@ -1,7 +1,10 @@
 var express = require('express');
 var router = express.Router()
+const fs = require('fs');
+const path = require('path');
 
-const basketCtrl = require('../controler/basket')
+const basketCtrl = require('../controler/basket');
+const { log } = require('console');
 
 /* GET users listing. */
 router.get('/basket', function(req, res, next) {
@@ -10,7 +13,8 @@ router.get('/basket', function(req, res, next) {
 
 router.post('/getlist', async (req,res) => {
   const result = await basketCtrl.getList();
-  res.json(result)
+  console.log(result);
+  res.send(result);
 })
 
 module.exports = router;

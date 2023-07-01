@@ -5,7 +5,8 @@ const {Schema} = mongoose;
 
 const generalSchema = new Schema ({
     type: {type: String, default:''},
-    amount: {type: String, default:''}
+    amount: {type: String, default:''},
+    photoUrl: {type: String, default:''}
 },{timestamps: true});
 
 const modelName = path.basename(__filename, '.js')

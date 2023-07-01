@@ -20,4 +20,11 @@ main .nav-menu a div {
 main .content {
   min-width: 810px;
   height: 700px;
+}
+main .content .photo {
+  width: 500px;
+  height: 500px;
+}
+main .content .photo img {
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */

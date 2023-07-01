@@ -4,9 +4,9 @@ const render = async() => {
     const result = await getList();
     const html = result.map(element => 
         `<div>
-            <div>Розмір фото: ${element.type}</div>
+            <div>Розмір фото:${element.type} </div>
             <div>Кількість: ${element.amount}</div>
-            <div></div>
+            <div class="photo"><img src="${element.photoUrl}"></div>
         </div>`
     ).join('')
 
